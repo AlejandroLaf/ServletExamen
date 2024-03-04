@@ -36,10 +36,10 @@ public class ExamenServlet extends HttpServlet {
 		String sqlquery = null;
 		try {
 
-			String username = "root";
-			String password = "root";
-			
-			String url= "jdbc:mysql://localhost:3306/examendaw2";
+			String username = "examenuser";
+			String password = "examenpass";
+			//yo creo que habria que modificar esto 
+			String url= "jdbc:mysql://107.21.154.24:3306/examendaw2";
 			conn = DriverManager.getConnection(url, username, password);
 			stmt = conn.createStatement();
 			
